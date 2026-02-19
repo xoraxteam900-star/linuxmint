@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Icon } from './ui/Icon';
+import { Icon } from '../ui/Icon';
 import { portfolio, skills } from '@/data/portfolio';
 
 export function ResumeWindow() {

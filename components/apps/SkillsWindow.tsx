@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Icon } from './ui/Icon';
+import Icon from '../ui/Icon';
 import { skills } from '@/data/portfolio';
 
 const categoryLabels: Record<string, { label: string; color: string }> = {

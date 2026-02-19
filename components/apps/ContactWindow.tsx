@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Icon } from './ui/Icon';
+import Icon from '../ui/Icon';
 import { portfolio, socialLinks } from '@/data/portfolio';
 
 export function ContactWindow() {

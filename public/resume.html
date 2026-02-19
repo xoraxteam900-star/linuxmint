@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Alex Johnson</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    header {
+      border-bottom: 2px solid #333;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    .title {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .contact-info {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: #666;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    h2 {
+      font-size: 18px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .job {
+      margin-bottom: 15px;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    .job-title {
+      font-weight: 600;
+    }
+    .company {
+      color: #666;
+      font-size: 14px;
+    }
+    ul {
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .skill {
+      font-size: 14px;
+    }
+    @media print {
+      body {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Alex Johnson</h1>
+    <p class="title">Full Stack Developer</p>
+    <div class="contact-info">
+      <span>alex@example.com</span>
+      <span>+1 (555) 123-4567</span>
+      <span>San Francisco, CA</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Hi, I'm a passionate Full Stack Developer with 5+ years of experience building modern web applications. I love creating intuitive user experiences and solving complex problems. I specialize in React, Next.js, Node.js, and cloud technologies.</p>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Senior Full Stack Developer</span>
+        <span>2021 - Present</span>
+      </div>
+      <p class="company">Tech Innovations Inc.</p>
+      <ul>
+        <li>Led development of microservices architecture serving 100K+ users</li>
+        <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+        <li>Mentored junior developers and conducted code reviews</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Full Stack Developer</span>
+        <span>2019 - 2021</span>
+      </div>
+      <p class="company">StartupXYZ</p>
+      <ul>
+        <li>Built responsive web applications using React and Node.js</li>
+        <li>Integrated third-party APIs and payment systems</li>
+        <li>Collaborated with UX team to improve user experience</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Junior Web Developer</span>
+        <span>2017 - 2019</span>
+      </div>
+      <p class="company">WebAgency Co.</p>
+      <ul>
+        <li>Developed and maintained client websites</li>
+        <li>Fixed bugs and optimized website performance</li>
+        <li>Worked with design team to implement mockups</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">React</div>
+      <div class="skill">Next.js</div>
+      <div class="skill">TypeScript</div>
+      <div class="skill">Node.js</div>
+      <div class="skill">Python</div>
+      <div class="skill">PostgreSQL</div>
+      <div class="skill">MongoDB</div>
+      <div class="skill">AWS</div>
+      <div class="skill">Docker</div>
+      <div class="skill">GraphQL</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="job">
+      <div class="job-header">
+        <span class="job-title">Bachelor of Science in Computer Science</span>
+        <span>2013 - 2017</span>
+      </div>
+      <p class="company">University of Technology</p>
+    </div>
+  </section>
+</body>
+</html>
+

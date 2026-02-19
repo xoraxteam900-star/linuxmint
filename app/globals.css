@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mint-primary: #00B894;
+  --mint-dark: #00A884;
+  --desktop-dark: #0f1f18;
+  --desktop-light: #1e3a2f;
+  --window-bg: #1a1a2e;
+  --window-title: #2d2d44;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', 'Segoe UI', system-ui, sans-serif;
+  overflow: hidden;
+  background: #0f1f18;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 184, 148, 0.3);
+  color: white;
+}
+
+/* Focus outline */
+:focus-visible {
+  outline: 2px solid var(--mint-primary);
+  outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes windowOpen {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes windowClose {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+
+@keyframes menuSlide {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-window-open {
+  animation: windowOpen 200ms ease-out forwards;
+}
+
+.animate-window-close {
+  animation: windowClose 150ms ease-in forwards;
+}
+
+.animate-menu-slide {
+  animation: menuSlide 200ms ease-out forwards;
+}
+
+/* Window draggable */
+.window-dragging {
+  cursor: move;
+  user-select: none;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Prevent text selection on desktop */
+.desktop-area {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow: auto;
+  }
+}
+
+/* Input reset for terminal */
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+/* Background patterns */
+.bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #00B894, #00A884);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
